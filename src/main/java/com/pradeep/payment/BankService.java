@@ -1,15 +1,13 @@
 package com.pradeep.payment;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.pradeep.accounts.UserAccount;
 import com.pradeep.exception.UserAlreadyExistsException;
 import com.pradeep.exception.UserNotFoundException;
 import com.pradeep.repository.UserRepository;
 import com.pradeep.utils.AccountNumberGenerator;
-import com.sun.source.tree.BinaryTree;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import java.util.UUID;
 
 @Service
 public class BankService {

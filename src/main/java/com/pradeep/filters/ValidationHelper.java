@@ -1,13 +1,12 @@
 package com.pradeep.filters;
 
-import com.pradeep.accounts.BankAccount;
-import com.pradeep.accounts.UserAccount;
-import com.pradeep.exception.ValidationException;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
-import java.util.function.Function;
+import com.pradeep.accounts.UserAccount;
+import com.pradeep.exception.ValidationException;
 
 @Component
 public class ValidationHelper {

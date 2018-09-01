@@ -1,10 +1,11 @@
 package com.pradeep.repository;
 
-import com.pradeep.accounts.UserAccount;
-import org.springframework.stereotype.Repository;
-
 import java.util.HashMap;
 import java.util.Map;
+
+import org.springframework.stereotype.Repository;
+
+import com.pradeep.accounts.UserAccount;
 
 @Repository
 public class UserRepository implements BaseRepository<UserAccount>{

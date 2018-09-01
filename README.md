@@ -2,6 +2,8 @@
 Transfer fund Demo
 ==================
 This is a SpringBoot application.
+IDE used: IntelliJ
+Refer https://projectlombok.org/setup/eclipse (if you are using eclipse) 
 
 Assumptions:
 Account IDs are numeric and unique.
@@ -35,9 +37,10 @@ Apis:
       "toAccount" : "",
       "amount" :
     }
+    
  4.View History of Transaction
   uri : /v1/transferFund
-  request type: POST
+  request type: GET
   
   
   

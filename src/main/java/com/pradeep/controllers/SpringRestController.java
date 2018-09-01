@@ -1,23 +1,31 @@
 package com.pradeep.controllers;
 
-        import com.pradeep.accounts.UserAccount;
-        import com.pradeep.domain.TransactionLog;
-        import com.pradeep.payment.BankService;
-        import com.pradeep.payment.TransactionHistoryService;
-        import com.pradeep.payment.TransferService;
-        import com.pradeep.payment.TransferServiceHandler;
-        import com.pradeep.request.TransferRequest;
-        import com.pradeep.responses.ResponseDetails;
-        import com.pradeep.responses.Status;
-        import com.pradeep.responses.UserResponseDetails;
-        import lombok.extern.log4j.Log4j2;
-        import org.apache.logging.log4j.ThreadContext;
-        import org.springframework.beans.factory.annotation.Autowired;
-        import org.springframework.web.bind.annotation.*;
-
-        import javax.validation.constraints.Size;
         import java.util.List;
-        import java.util.UUID;
+import java.util.UUID;
+
+import javax.validation.constraints.Size;
+
+import org.apache.logging.log4j.ThreadContext;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.pradeep.accounts.UserAccount;
+import com.pradeep.domain.TransactionLog;
+import com.pradeep.payment.BankService;
+import com.pradeep.payment.TransactionHistoryService;
+import com.pradeep.payment.TransferServiceHandler;
+import com.pradeep.request.TransferRequest;
+import com.pradeep.responses.ResponseDetails;
+import com.pradeep.responses.Status;
+import com.pradeep.responses.UserResponseDetails;
+
+import lombok.extern.log4j.Log4j2;
 
 @RestController
 @Log4j2

@@ -1,8 +1,9 @@
 package com.pradeep.filters;
 
+import org.springframework.stereotype.Component;
+
 import com.pradeep.accounts.UserAccount;
 import com.pradeep.exception.AccountValidationException;
-import org.springframework.stereotype.Component;
 
 @org.springframework.core.annotation.Order(value=1)
 @Component

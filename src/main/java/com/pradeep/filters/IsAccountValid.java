@@ -1,9 +1,10 @@
 package com.pradeep.filters;
 
-import com.pradeep.exception.AccountValidationException;
-import com.pradeep.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import com.pradeep.exception.AccountValidationException;
+import com.pradeep.repository.UserRepository;
 
 @org.springframework.core.annotation.Order(value=1)
 @Component

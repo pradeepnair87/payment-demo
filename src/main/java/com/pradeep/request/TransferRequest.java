@@ -7,12 +7,13 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@ToString
+
 @AllArgsConstructor
 public class TransferRequest {
 
     private String fromAccount;
     private String toAccount;
     private Long amount;
+	
 
 }

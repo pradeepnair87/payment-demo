@@ -1,15 +1,13 @@
 package com.pradeep.repository;
 
-import com.pradeep.accounts.UserAccount;
-import com.pradeep.domain.TransactionLog;
-import org.springframework.stereotype.Repository;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
+
+import org.springframework.stereotype.Repository;
+
+import com.pradeep.domain.TransactionLog;
 
 @Repository
 public class TransactionLogRepository implements BaseRepository<List<TransactionLog>>{

@@ -1,6 +1,7 @@
 package com.pradeep.responses;
 
 import com.pradeep.accounts.UserAccount;
+
 import lombok.Getter;
 import lombok.experimental.Builder;
 

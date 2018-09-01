@@ -2,9 +2,8 @@ package com.pradeep.accounts;
 
 
 import com.pradeep.exception.InsufficentBalanceException;
-import com.pradeep.repository.TransactionLogRepoWrapper;
+
 import lombok.Getter;
-import org.springframework.beans.factory.annotation.Autowired;
 
 @Getter
 public class UserAccount implements BankAccount{
