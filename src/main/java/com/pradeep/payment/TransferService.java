@@ -20,8 +20,8 @@ public class TransferService {
     TransactionLogRepoWrapper logRepositoryWrapper;
 
 public TransactionResponse transferFund(UserAccount fromAccount, UserAccount toAccount, Long  amount){
-
-    if (fromAccount.getId() < toAccount.getId()) {
+	//Lock ordering to avoid deadlocks based on AccoundId
+    if (fromAccount.getId() < toAccount.getId()) { 
         synchronized (fromAccount) {
             synchronized (toAccount) {
                  return doTransferInternal(fromAccount, toAccount, amount);

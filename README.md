@@ -42,6 +42,14 @@ Apis:
   uri : /v1/transferFund
   request type: GET
   
+  How to run:
+  
+  1. Navigate to the project folder
+  2.  ./gradlew clean build
+  3.  java -jar build/libs/payment-core-1.0-SNAPSHOT.jar
+  
+  application starts on 8080 port
+  
   
   
   
