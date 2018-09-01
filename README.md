@@ -1,2 +1,46 @@
-# payment-demo1
+# payment-demo
 Transfer fund Demo
+==================
+This is a SpringBoot application.
+
+Assumptions:
+Account IDs are numeric and unique.
+Account names should be unique.
+
+Validations:
+1.From and To Accounts should exist in the system.
+2.For fund transfer, From and To Accounts can't be same.
+3.Amount should positive long value.
+
+Apis:
+1. Create User Account
+  uri: /v1/createAccount
+  request type: PUT
+  Paramerters:
+   String guestName
+   Long intialDeposit
+   
+2.View User Account
+  uri: /v1/viewAccount/{name}
+  request type: GET
+  Parameters:
+    name
+    
+3.Transfer Fund
+  uri: /v1/transferFund
+  request Type: POST
+  Parameters:
+    {
+      "fromAccount" : "",
+      "toAccount" : "",
+      "amount" :
+    }
+ 4.View History of Transaction
+  uri : /v1/transferFund
+  request type: POST
+  
+  
+  
+  
+
+
