@@ -1,0 +1,38 @@
+group 'com.pradeep.payment'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+
+sourceCompatibility = 1.8
+
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+
+    dependencies { classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.1.RELEASE")  }
+}
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'org.springframework.boot:spring-boot-starter-web'
+
+    compile ('org.springframework.boot:spring-boot-starter'){
+        exclude module: 'spring-boot-starter-logging'
+    }
+    compile("org.springframework.boot:spring-boot-starter-test:1.5.1.RELEASE"){
+        exclude module: 'spring-boot-starter-logging'
+        exclude module: 'logback-classic'
+    }
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.11.1'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.1'
+    compile "org.projectlombok:lombok:1.14.4"
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: '1.5.2.RELEASE'
+    testCompile "org.springframework:spring-test:4.3.8.RELEASE"
+    testCompile "org.mock-server:mockserver-netty:3.9.1"
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="all" monitorInterval="900">
+    <properties>
+        <property name="pattern">%d{yyyy-MM-dd} %d{HH:mm:ss.SSS} : [THREAD ID=%t] : [%X{txnId}] : %-5level : %logger{36} : %msg%n</property>
+    </properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${pattern}" />
+        </Console>
+
+    </Appenders>
+    <loggers>
+        <root level="info">
+            <appender-ref ref="Console" />
+        </root>
+    </loggers>
+
+</Configuration>
