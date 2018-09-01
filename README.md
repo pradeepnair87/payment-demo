@@ -39,7 +39,7 @@ Apis:
     }
     
  4.View History of Transaction
-  uri : /v1/transferFund
+  uri : /v1/viewTxnHistory
   request type: GET
   
   How to run:
