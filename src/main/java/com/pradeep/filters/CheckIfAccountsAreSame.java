@@ -2,20 +2,22 @@ package com.pradeep.filters;
 
 import org.springframework.stereotype.Component;
 
-import com.pradeep.accounts.UserAccount;
 import com.pradeep.exception.AccountValidationException;
+import com.pradeep.request.TransferRequest;
 
-@org.springframework.core.annotation.Order(value=1)
+@org.springframework.core.annotation.Order(value = 2)
 @Component
-public class CheckIfAccountsAreSame implements TransactionValiationFilters {
+public class CheckIfAccountsAreSame implements AccountValidationFilters {
 
-    public ValidationResult validate(UserAccount fromAccount, UserAccount toAccountName) throws AccountValidationException{
-        ValidationResult result =null;
-        if(fromAccount.getName().equalsIgnoreCase(toAccountName.getName())){
-            result = new ValidationResult(" From Account and To Account are same",false);
-        }else{
-            result = new ValidationResult( " From Account and To Account are different",true);
-        }
-        return result;
-    }
+	
+	@Override
+	public ValidationResult validate(TransferRequest request) throws AccountValidationException {
+		ValidationResult result = null;
+		if (request.getFromAccount().equalsIgnoreCase(request.getToAccount())) {
+			result = new ValidationResult(" From Account and To Account are same", false);
+		} else {
+			result = new ValidationResult(" From Account and To Account are different", true);
+		}
+		return result;
+	}
 }

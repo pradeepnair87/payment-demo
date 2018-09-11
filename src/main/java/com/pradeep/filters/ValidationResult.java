@@ -7,7 +7,7 @@ import lombok.Getter;
 @Getter
 public class ValidationResult {
 
-    String reason;
-    boolean isvalid;
+	String reason;
+	boolean isvalid;
 
 }

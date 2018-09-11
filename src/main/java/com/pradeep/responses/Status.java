@@ -1,5 +1,5 @@
 package com.pradeep.responses;
 
-public enum Status{
-    SUCCESS,FAILED,ERROR;
+public enum Status {
+	SUCCESS, FAILED, ERROR;
 }

@@ -5,5 +5,4 @@ package com.pradeep.accounts;
  */
 public interface BankAccount {
 
-
 }

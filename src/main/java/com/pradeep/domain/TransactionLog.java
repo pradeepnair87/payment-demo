@@ -8,16 +8,15 @@ import lombok.experimental.Builder;
 @Getter
 @Builder
 public class TransactionLog {
-   Long txnId;
-   String name;
-   Long amount;
-   String state;
+	Long txnId;
+	String name;
+	Long amount;
+	String state;
 
-
-   public TransactionLog(Long txnId, String name, Long amount, String state) {
-      this.txnId = txnId;
-      this.name = name;
-      this.amount = amount;
-      this.state = state;
-   }
+	public TransactionLog(Long txnId, String name, Long amount, String state) {
+		this.txnId = txnId;
+		this.name = name;
+		this.amount = amount;
+		this.state = state;
+	}
 }

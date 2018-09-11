@@ -1,12 +1,12 @@
 package com.pradeep.exception;
 
-public class AccountValidationException extends ValidationException{
+public class AccountValidationException extends ValidationException {
 
+	public AccountValidationException() {
+		super();
+	}
 
-    public AccountValidationException() {
-        super();
-    }
-    public AccountValidationException(String s) {
-        super(s);
-    }
+	public AccountValidationException(String s) {
+		super(s);
+	}
 }

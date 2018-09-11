@@ -11,15 +11,14 @@ import lombok.experimental.Builder;
 @Builder
 @ToString
 @AllArgsConstructor
-public class UserResponseDetails  {
-  String name;
-  Long balance;
-  long id;
+public class UserResponseDetails {
+	String name;
+	Long balance;
+	long id;
 
-
-   /* public UserResponseDetails(String name, Long balance, String message,Status status, int code){
-        super(message,status,code);
-        this.name = name;
-        this.balance=balance;
-    }*/
+	/*
+	 * public UserResponseDetails(String name, Long balance, String message,Status
+	 * status, int code){ super(message,status,code); this.name = name;
+	 * this.balance=balance; }
+	 */
 }

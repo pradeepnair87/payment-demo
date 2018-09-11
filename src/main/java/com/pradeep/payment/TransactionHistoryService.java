@@ -11,15 +11,15 @@ import com.pradeep.repository.TransactionLogRepository;
 @Service
 public class TransactionHistoryService {
 
-    TransactionLogRepository transactionLogRepository;
-    @Autowired
-    public TransactionHistoryService(TransactionLogRepository transactionLogRepository){
-        this.transactionLogRepository=transactionLogRepository;
-    }
+	TransactionLogRepository transactionLogRepository;
 
-   public List<TransactionLog> getAllTransaction(){
-        return transactionLogRepository.fetchAll();
-   }
+	@Autowired
+	public TransactionHistoryService(TransactionLogRepository transactionLogRepository) {
+		this.transactionLogRepository = transactionLogRepository;
+	}
 
+	public List<TransactionLog> getAllTransaction() {
+		return transactionLogRepository.fetchAll();
+	}
 
 }

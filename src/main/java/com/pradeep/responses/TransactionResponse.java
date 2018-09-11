@@ -8,10 +8,10 @@ import lombok.experimental.Builder;
 @Builder
 @Getter
 public class TransactionResponse {
-    String message;
-    Status status;
-    int code;
-    UserAccount fromAcount;
-    UserAccount toAccount;
-    long Amount;
+	String message;
+	Status status;
+	int code;
+	UserAccount fromAcount;
+	UserAccount toAccount;
+	long Amount;
 }

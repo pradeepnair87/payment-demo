@@ -12,8 +12,7 @@ import lombok.experimental.Builder;
 @AllArgsConstructor
 @Builder
 public class ResponseDetails {
-    String message;
-    Status status;
-    int code;
+	String message;
+	Status status;
+	int code;
 }
-
